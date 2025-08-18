@@ -27,19 +27,19 @@ The project analyzes credit card transaction data to identify fraudulent transac
 ## Screenshots
 
 ### 🏠 Home Page
-![Home Page](assets/home_page.png)
+![Home Page](asset/home_page.png)
 *Project overview with dataset statistics and key features*
 
 ### 📊 Data Analysis Page
-![Data Analysis](assets/data_analysis.png)
+![Data Analysis](asset/data_analysis.png)
 *Interactive data exploration with sample transaction data*
 
 ### 🔍 Fraud Detection Demo
-![Fraud Detection](assets/fraud_detection.png)
+![Fraud Detection](asset/fraud_detection.png)
 *Interactive fraud detection interface with transaction input fields*
 
 ### 📈 Performance Metrics
-![Performance Metrics](assets/performance_metrics.png)
+![Performance Metrics](asset/performance_metrics.png)
 *Model performance visualization with ROC curves and evaluation metrics*
 
 **Note**: The screenshots show the application running in demo mode with the sample dataset. With the full dataset, you'll see real model training and actual fraud detection capabilities.
