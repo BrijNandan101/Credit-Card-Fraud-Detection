@@ -30,6 +30,9 @@ The project analyzes credit card transaction data to identify fraudulent transac
 - `creditcard.csv` - **SAMPLE** dataset (replace with full dataset for real analysis)
 - `requirements.txt` - Python dependencies
 - `README.md` - This file with setup instructions
+- `streamlit_app.py` - Streamlit web app for interactive demo and analysis
+- `streamlit_requirements.txt` - Dependencies for running the Streamlit app
+- `deployment_guide.md` - Detailed guide with multiple deployment options
 
 ## Prerequisites
 
@@ -52,6 +55,12 @@ Or install packages individually:
 pip install pandas numpy scikit-learn imbalanced-learn matplotlib
 ```
 
+If you want to run the Streamlit web app, install these instead (or in addition):
+
+```bash
+pip install -r streamlit_requirements.txt
+```
+
 ### Step 2: Get the Full Dataset (Recommended)
 
 1. Download the full dataset from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
@@ -66,12 +75,29 @@ Execute the Python script:
 python CreditCardFraud.py
 ```
 
+### Step 4: Run the Streamlit Web App (Live Demo)
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Then open the URL shown in the terminal (e.g., `http://localhost:8501`).
+
+Notes:
+- With the sample dataset (no fraud cases), the app automatically switches to a safe demo mode for training, prediction, and metrics.
+- When you replace `creditcard.csv` with the full dataset, the app will train and evaluate a real model.
+
 ## What the Script Does
 
 ### With Sample Dataset (Current):
 - Shows data structure and preprocessing steps
 - Demonstrates the pipeline without running ML algorithms
 - Provides information about getting the full dataset
+
+### What the Streamlit App Provides
+- Interactive pages: Home, Data Analysis, Model Training, Fraud Detection, Performance Metrics
+- Works with the sample dataset (demo mode) and full dataset (real training/prediction)
+- Visualizations with Plotly and clear, guided UI
 
 ### With Full Dataset:
 1. **Data Loading**: Loads the credit card transaction dataset
@@ -110,6 +136,9 @@ python CreditCardFraud.py
 2. **ImportError**: Install missing packages using `pip install package_name`
 3. **MemoryError**: The full dataset is large; ensure you have sufficient RAM
 4. **Single-class data error**: This happens with the sample dataset - get the full dataset
+
+5. **Plotly pie chart error (length mismatch)**: The Streamlit app handles single-class datasets automatically. If you modified the app and see this error, ensure the pie chart only uses labels that match available classes.
+6. **Time variable conflict**: If you add code that defines a `time` variable, avoid shadowing the `time` module (use `time_val` instead).
 
 ### If you get SMOTE-related errors:
 ```bash
@@ -150,6 +179,17 @@ Feel free to modify the code to:
 3. **Install dependencies**: `pip install -r requirements.txt`
 4. **Run analysis**: `python CreditCardFraud.py`
 5. **View results**: Check the console output and generated plots
+
+## Deploying the Project
+
+For a complete deployment playbook (Streamlit Cloud, Heroku, Docker, AWS), see `deployment_guide.md`.
+
+Quick deploy (Streamlit Cloud):
+1. Push your code to GitHub
+2. Go to the Streamlit Cloud dashboard (`https://share.streamlit.io`)
+3. Connect your repo and select `streamlit_app.py`
+4. Set Python version and install from `streamlit_requirements.txt`
+5. Deploy
 
 ## License
 
