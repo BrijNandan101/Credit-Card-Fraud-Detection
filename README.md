@@ -24,6 +24,26 @@ The project analyzes credit card transaction data to identify fraudulent transac
 - **Multiple ML algorithms** for comparison
 - **ROC curves** and performance metrics for evaluation
 
+## Screenshots
+
+### 🏠 Home Page
+![Home Page](https://i.imgur.com/example1.png)
+*Project overview with dataset statistics and key features*
+
+### 📊 Data Analysis Page
+![Data Analysis](https://i.imgur.com/example2.png)
+*Interactive data exploration with sample transaction data*
+
+### 🔍 Fraud Detection Demo
+![Fraud Detection](https://i.imgur.com/example3.png)
+*Interactive fraud detection interface with transaction input fields*
+
+### 📈 Performance Metrics
+![Performance Metrics](https://i.imgur.com/example4.png)
+*Model performance visualization with ROC curves and evaluation metrics*
+
+**Note**: The screenshots show the application running in demo mode with the sample dataset. With the full dataset, you'll see real model training and actual fraud detection capabilities.
+
 ## Files in the Project
 
 - `CreditCardFraud.py` - Main Python script with all the machine learning code
