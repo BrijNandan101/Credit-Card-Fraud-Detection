@@ -1,6 +1,6 @@
 # Credit Card Fraud Detection using Machine Learning
 
-**Live Demo:** [https://brijnandan101-credit-card-fraud-detection-streamlit-app-tk5uyp.streamlit.app/](https://brijnandan101-credit-card-fraud-detection-streamlit-app-tk5uyp.streamlit.app/)
+**Live Demo:** [https://brijnandan101-credit-card-fraud-detection.streamlit.app/](https://brijnandan101-credit-card-fraud-detection.streamlit.app/)
 
 A comprehensive machine learning project that implements multiple algorithms to detect fraudulent credit card transactions. This project demonstrates advanced data preprocessing techniques, handling of imbalanced datasets, and thorough model evaluation.
 
