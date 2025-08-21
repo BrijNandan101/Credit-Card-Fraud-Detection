@@ -1,0 +1,11 @@
+.git
+.gitignore
+.vscode
+.venv
+.ipynb_checkpoints
+CreditCardFraud.ipynb
+CreditCardFraud.py
+download_dataset.py
+LICENSE
+README.md
+requirements.txt
